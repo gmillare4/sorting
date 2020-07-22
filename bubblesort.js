@@ -4,8 +4,7 @@ function bubbleSort(array, counter = array.length - 1) {
   for (let i = 0; i < counter; i++) {
     let j = i + 1;
     if (array[i] > array[j]) {
-      let moveElem = array.splice(i, 1);
-      array.splice(j, 0, moveElem[0]);
+      swap(array, i, j);
     }
   }
   counter--;
@@ -14,5 +13,8 @@ function bubbleSort(array, counter = array.length - 1) {
   }
   return array;
 }
-
+function swap(array, i, j) {
+  let moveElem = array.splice(i, 1);
+  array.splice(j, 0, moveElem[0]);
+}
 // [8, 2, 5, 7]

@@ -19,4 +19,12 @@ describe("Bubble Sort", function () {
       3000,
     ]);
   });
+  // beforeAll(function () {
+  //   spyOn(swap).and.callThrough();
+  // });
+  // it("number of times elements are swapped"),
+  //   function () {
+  //     bubbleSort([2, 7, 1, 40]);
+  //     expect(swap.calls.count()).toEqual(2);
+  //   };
 });
